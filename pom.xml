@@ -9,12 +9,12 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.dewlabs</groupId>
-    <artifactId>hami</artifactId>
+    <artifactId>event-driven-microservices</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>hami</name>
-    <description>hami</description>
+    <name>event-driven-microservices</name>
+    <description>event-driven-microservices</description>
     <modules>
-        <module>aggregator-service</module>
+        <module>twitter-to-kafka-service</module>
     </modules>
     <packaging>pom</packaging>
     <properties>

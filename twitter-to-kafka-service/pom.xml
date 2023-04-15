@@ -3,13 +3,18 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.dewlabs</groupId>
-        <artifactId>hami</artifactId>
+        <artifactId>event-driven-microservices</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <artifactId>aggregator-service</artifactId>
+    <artifactId>twitter-to-kafka-service</artifactId>
     <packaging>jar</packaging>
-    <name>aggregator-service</name>
+
+    <name>twitter-to-kafka-service</name>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
 
     <dependencies>
         <dependency>
@@ -19,20 +24,12 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
+            <version>${spring-boot.version}</version>
         </dependency>
         <dependency>
             <groupId>org.twitter4j</groupId>
             <artifactId>twitter4j-stream</artifactId>
+            <version>${twitter4j-stream.version}</version>
         </dependency>
     </dependencies>
-
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-        </plugins>
-    </build>
 </project>
