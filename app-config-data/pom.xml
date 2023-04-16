@@ -5,13 +5,12 @@
         <groupId>com.rolandsall</groupId>
         <artifactId>event-driven-microservices</artifactId>
         <version>0.0.1-SNAPSHOT</version>
-        <relativePath>../../pom.xml</relativePath>
     </parent>
 
-    <artifactId>kafka-admin</artifactId>
+    <artifactId>app-config-data</artifactId>
     <packaging>jar</packaging>
 
-    <name>kafka-admin</name>
+    <name>app-config-data</name>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -19,8 +18,13 @@
 
     <dependencies>
         <dependency>
-            <groupId>org.springframework.kafka</groupId>
-            <artifactId>spring-kafka</artifactId>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <scope>provided</scope>
         </dependency>
     </dependencies>
 </project>
