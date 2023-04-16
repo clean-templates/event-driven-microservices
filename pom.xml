@@ -8,13 +8,17 @@
         <version>3.0.2</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.dewlabs</groupId>
+    <groupId>com.rolandsall</groupId>
     <artifactId>event-driven-microservices</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>event-driven-microservices</name>
     <description>event-driven-microservices</description>
     <modules>
         <module>twitter-to-kafka-service</module>
+        <module>kafka</module>
+        <module>kafka/kafka-model</module>
+        <module>kafka/kafka-admin</module>
+        <module>kafka/kafka-producer</module>
     </modules>
     <packaging>pom</packaging>
     <properties>
