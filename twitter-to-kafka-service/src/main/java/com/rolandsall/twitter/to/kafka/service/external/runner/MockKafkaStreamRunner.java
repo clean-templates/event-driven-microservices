@@ -2,6 +2,7 @@ package com.rolandsall.twitter.to.kafka.service.external.runner;
 
 import com.rolandsall.app.config.data.config.TwitterToKafkaServiceConfigData;
 import com.rolandsall.twitter.to.kafka.service.core.application.twitter.execption.TwitterToKafkaServiceException;
+import com.rolandsall.twitter.to.kafka.service.external.listener.TwitterKafkaStatusListener;
 import org.springframework.stereotype.Component;
 import twitter4j.TwitterException;
 
