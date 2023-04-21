@@ -23,6 +23,7 @@
         <module>common-config</module>
         <module>app-config-data</module>
         <module>config-server</module>
+        <module>kafka-to-elastic-service</module>
     </modules>
     <packaging>pom</packaging>
     <properties>
@@ -68,6 +69,11 @@
                 <groupId>com.rolandsall</groupId>
                 <artifactId>kafka-model</artifactId>
                 <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.rolandsall</groupId>
+                <artifactId>kafka-consumer</artifactId>
+                <version>0.0.1-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>com.rolandsall</groupId>
