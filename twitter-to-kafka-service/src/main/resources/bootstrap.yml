@@ -4,5 +4,7 @@ spring:
   cloud:
     config:
       uri: ${CONFIG_SERVER_URL:http://localhost:8888/}
+      username: '{cipher}875180c7ade554934265df2dfa1517654fe720e700c7fb495470ed55bde96632026d2ee9f3f3ff2b57c87a3615bad8b5'
+      password: '{cipher}f8810b66d48aadb008b4c6216f6636be13dbbbc1ec8d3c4d1056c98396b70737adc17f169b8f7e649bba780ecfec8b6b'
   profiles:
     active: ${PROFILE:local}
