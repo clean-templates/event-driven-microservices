@@ -8,4 +8,6 @@ spring:
           default-label: master
           uri: https://github.com/clean-templates/event-driven-microservices
           clone-on-start: true
-    fail-fast: true
+          search-paths:
+            - 'config-server-repository'
+      fail-fast: true
