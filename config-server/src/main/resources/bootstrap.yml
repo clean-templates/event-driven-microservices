@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: configserver
+  cloud:
+    config:
+      server:
+        git:
+          default-label: master
+          uri: https://github.com/clean-templates/event-driven-microservices
+          clone-on-start: true
+    fail-fast: true
