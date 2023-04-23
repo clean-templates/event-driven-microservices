@@ -1,4 +1,6 @@
 ### Send PUT request with json body
+#DELETE http://localhost:9200/twitter-index
+
 PUT http://localhost:9200/twitter-index
 Content-Type: application/json
 
@@ -19,7 +21,7 @@ Content-Type: application/json
       },
       "createdAt": {
         "type": "date",
-        "format": "yyyy-MM-dd'T'HH:mm:ssZZ"
+        "format":"YYYY-MM-DD'T'HH:mm:ssZ"
       },
       "text": {
         "type": "text",

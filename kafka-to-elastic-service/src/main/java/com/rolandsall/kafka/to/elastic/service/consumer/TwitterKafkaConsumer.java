@@ -6,7 +6,6 @@ import com.rolandsall.app.config.data.config.KafkaConsumerConfigData;
 import com.rolandsall.elastic.index.client.service.ElasticIndexClient;
 import com.rolandsall.elastic.model.index.TwitterIndexModel;
 import com.rolandsall.kafka.admin.client.KafkaAdminClient;
-import com.rolandsall.kafka.consumer.config.KafkaConsumerConfig;
 import com.rolandsall.kafka.to.elastic.service.transformer.AvroToElasticModelTransformer;
 import lombok.RequiredArgsConstructor;
 import org.slf4j.Logger;

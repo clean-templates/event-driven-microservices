@@ -4,7 +4,7 @@ Content-Type: application/json
 {
   "userId": "1",
   "id": "1",
-  "createdAt": "2022-01-01T23:00:50+0000",
+  "createdAt": "2013-09-29T18:46:19-0700",
   "text": "test elastic search2"
 }
 

@@ -14,6 +14,7 @@ import org.springframework.data.elasticsearch.repository.config.EnableElasticsea
 import org.springframework.web.util.UriComponents;
 import org.springframework.web.util.UriComponentsBuilder;
 
+
 import java.util.Objects;
 
 @Configuration
@@ -28,23 +29,24 @@ public class ElasticsearchConfig extends AbstractElasticsearchConfiguration {
     @Bean
     public RestHighLevelClient elasticsearchClient() {
         UriComponents serverUri = UriComponentsBuilder.fromHttpUrl(elasticConfigData.getConnectionUrl()).build();
-        return new RestHighLevelClient(
-                RestClient.builder(new HttpHost(
-                        Objects.requireNonNull(serverUri.getHost()),
-                        serverUri.getPort(),
-                        serverUri.getScheme()
-                )).setRequestConfigCallback(
+        HttpHost elasticHttpHost = new HttpHost(
+                Objects.requireNonNull(serverUri.getHost()),
+                serverUri.getPort(),
+                serverUri.getScheme()
+        );
+        return new RestHighLevelClient(RestClient.builder(elasticHttpHost)
+                .setRequestConfigCallback(
                         requestConfigBuilder ->
                                 requestConfigBuilder
-                                        .setConnectTimeout(elasticConfigData.getConnectionTimeout())
-                                        .setSocketTimeout(elasticConfigData.getSocketTimeout())
+                                        .setConnectTimeout(elasticConfigData.getConnectTimeoutMs())
+                                        .setSocketTimeout(elasticConfigData.getSocketTimeoutMs())
 
                 )
         );
     }
 
     @Bean
-    public ElasticsearchOperations elasticsearchTemplate() {
+    public ElasticsearchOperations elasticSearch() {
         return new ElasticsearchRestTemplate(elasticsearchClient());
     }
 }
