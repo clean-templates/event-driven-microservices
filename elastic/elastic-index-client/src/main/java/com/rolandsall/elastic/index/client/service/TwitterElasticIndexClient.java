@@ -5,7 +5,9 @@ import com.rolandsall.elastic.index.client.util.ElasticIndexUtil;
 import com.rolandsall.elastic.model.index.TwitterIndexModel;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.context.annotation.Bean;
 import org.springframework.data.elasticsearch.core.ElasticsearchOperations;
+import org.springframework.data.elasticsearch.core.ElasticsearchRestTemplate;
 import org.springframework.data.elasticsearch.core.IndexedObjectInformation;
 import org.springframework.data.elasticsearch.core.mapping.IndexCoordinates;
 import org.springframework.data.elasticsearch.core.query.IndexQuery;
@@ -46,4 +48,5 @@ public class TwitterElasticIndexClient implements ElasticIndexClient<TwitterInde
 
         return documentIds;
     }
+
 }
