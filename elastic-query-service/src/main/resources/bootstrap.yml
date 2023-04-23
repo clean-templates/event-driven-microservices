@@ -1,6 +1,6 @@
 spring:
   application:
-    name: twitter-to-kafka
+    name: elastic-query-local
   cloud:
     config:
       uri: ${CONFIG_SERVER_URL:http://localhost:8888/}
@@ -8,5 +8,3 @@ spring:
       password: '{cipher}f8810b66d48aadb008b4c6216f6636be13dbbbc1ec8d3c4d1056c98396b70737adc17f169b8f7e649bba780ecfec8b6b'
   profiles:
     active: ${PROFILE:local}
-
-
