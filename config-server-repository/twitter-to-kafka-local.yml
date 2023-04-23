@@ -41,3 +41,11 @@ kafka-producer-config:
   request-timeout-ms: 60000
   retry-count: 5
 
+spring:
+  devtools:
+    restart:
+      enabled: false
+    add-properties: false
+    livereload:
+      enabled: false
+
