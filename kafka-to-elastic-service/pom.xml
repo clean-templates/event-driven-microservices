@@ -19,6 +19,18 @@
     <dependencies>
         <dependency>
             <groupId>com.rolandsall</groupId>
+            <artifactId>elastic-model</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.rolandsall</groupId>
+            <artifactId>elastic-config</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.rolandsall</groupId>
+            <artifactId>elastic-index-client</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.rolandsall</groupId>
             <artifactId>kafka-consumer</artifactId>
         </dependency>
         <dependency>

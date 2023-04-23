@@ -64,6 +64,16 @@
             </dependency>
             <dependency>
                 <groupId>com.rolandsall</groupId>
+                <artifactId>elastic-index-client</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.rolandsall</groupId>
+                <artifactId>elastic-config</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.rolandsall</groupId>
                 <artifactId>app-config-data</artifactId>
                 <version>${project.version}</version>
             </dependency>
