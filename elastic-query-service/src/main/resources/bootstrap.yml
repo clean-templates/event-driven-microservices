@@ -1,6 +1,6 @@
 spring:
   application:
-    name: elastic-query-local
+    name: elastic-query
   cloud:
     config:
       uri: ${CONFIG_SERVER_URL:http://localhost:8888/}
