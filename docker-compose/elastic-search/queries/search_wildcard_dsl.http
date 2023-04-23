@@ -1,0 +1,25 @@
+GET http://localhost:9200/twitter-index/_search
+Content-Type: application/json
+
+{
+  "from": 0,
+  "size": 20,
+  "query": {
+    "bool": {
+      "must": [
+        {
+          "match": {
+            "text": "kafka"
+          }
+        },
+        {
+          "match": {
+            "userId": 8434059197634525777
+          }
+        }
+      ]
+    }
+  }
+}
+
+

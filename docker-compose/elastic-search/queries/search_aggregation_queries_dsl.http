@@ -1,0 +1,25 @@
+// any match with any of the 3 words
+// kafka test elasticsearch
+
+GET http://localhost:9200/twitter-index/_search
+Content-Type: application/json
+
+{
+  "from": 0,
+  "size": 20,
+  "query": {
+    "bool": {
+      "must": [
+        {
+          "match": {
+            "text": "test"
+          }
+        },
+
+      ]
+    }
+  }
+}
+
+
+

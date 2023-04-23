@@ -1,0 +1,16 @@
+// exact match of the whole word
+// kafka test elasticsearch
+
+GET http://localhost:9200/twitter-index/_search
+Content-Type: application/json
+
+{
+  "query": {
+    "term": {
+      "text.keyword": "test elastic search2"
+    }
+  }
+}
+
+
+
