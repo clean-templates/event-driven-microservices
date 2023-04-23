@@ -24,6 +24,7 @@
         <module>app-config-data</module>
         <module>config-server</module>
         <module>kafka-to-elastic-service</module>
+        <module>elastic</module>
     </modules>
     <packaging>pom</packaging>
     <properties>
