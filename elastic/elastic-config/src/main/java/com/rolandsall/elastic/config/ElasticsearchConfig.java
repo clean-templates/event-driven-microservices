@@ -19,7 +19,7 @@ import java.util.Objects;
 
 @Configuration
 @RequiredArgsConstructor
-@EnableElasticsearchRepositories(basePackages = "com.rolandsall.elastic.index.client.repository")
+@EnableElasticsearchRepositories(basePackages = "com.rolandsall.elastic")
 public class ElasticsearchConfig extends AbstractElasticsearchConfiguration {
 
     private final ElasticConfigData elasticConfigData;

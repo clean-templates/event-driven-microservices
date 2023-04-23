@@ -25,6 +25,7 @@
         <module>config-server</module>
         <module>kafka-to-elastic-service</module>
         <module>elastic</module>
+        <module>common-util</module>
     </modules>
     <packaging>pom</packaging>
     <properties>
@@ -56,6 +57,16 @@
                 <version>${spring.cloud-version}</version>
                 <type>pom</type>
                 <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>com.rolandsall</groupId>
+                <artifactId>common-util</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.rolandsall</groupId>
+                <artifactId>elastic-query-client</artifactId>
+                <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.rolandsall</groupId>

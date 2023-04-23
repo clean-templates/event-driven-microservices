@@ -7,16 +7,10 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <artifactId>elastic</artifactId>
-    <packaging>pom</packaging>
+    <artifactId>common-util</artifactId>
+    <packaging>jar</packaging>
 
-    <name>elastic</name>
-    <modules>
-        <module>elastic-model</module>
-        <module>elastic-config</module>
-        <module>elastic-index-client</module>
-        <module>elastic-query-client</module>
-    </modules>
+    <name>common-util</name>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
