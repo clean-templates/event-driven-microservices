@@ -1,0 +1,11 @@
+POST http://localhost:9200/twitter-index/_doc/1
+Content-Type: application/json
+
+{
+  "userId": "1",
+  "id": "1",
+  "createdAt": "2022-01-01T23:00:50+0000",
+  "text": "test elastic search2"
+}
+
+
