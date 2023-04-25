@@ -14,3 +14,8 @@ elastic-config:
   connection-url: http://localhost:9200
   connect-timeout-ms: 5000
   socket-timeout-ms: 30000
+
+user-config:
+  username: test
+  password: '{cipher}464b41a073700ba882bb9b39b86aa63f29f29659d1713e88e08aa6a7e46daad3'
+  roles: USER
