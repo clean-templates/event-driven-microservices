@@ -1,4 +1,4 @@
-package com.rolandsall.twitter.to.kafka.service.api;
+package com.rolandsall.elastic.query.service.api;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;

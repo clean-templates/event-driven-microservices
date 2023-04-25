@@ -1,4 +1,4 @@
-package com.rolandsall.twitter.to.kafka.service.api;
+package com.rolandsall.elastic.query.service.api;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

@@ -1,4 +1,4 @@
-package com.rolandsall.twitter.to.kafka.service.config;
+package com.rolandsall.elastic.query.service.config;
 
 import com.rolandsall.app.config.data.config.UserConfigData;
 import lombok.AllArgsConstructor;
